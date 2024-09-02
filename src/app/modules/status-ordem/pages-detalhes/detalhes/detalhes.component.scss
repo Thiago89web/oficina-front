@@ -1,0 +1,51 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .field {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 8px;
+  }
+  
+  .field:last-child {
+    margin-right: 0;
+  }
+
+  .detalhe-cliente {
+    margin-bottom: 10px;
+  }
+
+  .divider {
+    margin-bottom: 20px;
+  }
+
+  .data-hora {
+    margin-right: 8px;
+    width: 20%;
+  }
+
+  .textarea-field {
+    width: 60%;
+    margin-top: 16px;
+  }
+
+  .btn-footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+.btn-footer button {
+  margin-right: 10px;
+}
+
+
+.estilo-botao {
+  color: white;
+  background-color: rgb(96, 125, 139);
+  margin-right: 15px;
+  margin-bottom: 1%;
+}
+

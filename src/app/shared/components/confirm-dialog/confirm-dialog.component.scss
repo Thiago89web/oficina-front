@@ -1,0 +1,24 @@
+.container {
+    background-color: #feffff;
+    h2 {
+        text-align: center;
+        color: rgb(97, 91, 91);
+    }
+    
+    mat-dialog-content p {
+        color: rgb(97, 91, 91);
+        font-weight: 500;
+    }
+    
+    mat-dialog-actions {
+        button {
+            width: 30%;
+            color: white; 
+        }
+                  
+        .btn-confirm {
+            background-color: #1d88e6;           
+        }
+        margin-bottom: 15px;
+    }
+}

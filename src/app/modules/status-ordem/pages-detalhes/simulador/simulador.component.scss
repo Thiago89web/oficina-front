@@ -1,0 +1,74 @@
+.item-card {
+    //margin: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .item-card-header {
+    background-color: #f5f5f5;
+  }
+
+  .item-card-content {
+    padding-top: 16px;
+  }
+  
+  .item-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .item-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .item-table th,
+  .item-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  .footer-bold {
+    font-weight: bold;
+  }
+  
+  .totals-row {
+    font-weight: bold;
+    background-color: #e0e0e0;
+  }
+  
+  table .valor-total-nf-header, .valor-total-nf-cell, .vt-nf-footer{
+    background-color: #d4edda; /* Verde claro */
+  }
+  
+  table .valor-total-header, .valor-total-cell, .vt-footer {
+    background-color: #d1ecf1; /* Azul claro */
+  }
+  
+
+  .info-container {
+    margin-top: 16px;
+    display: flex;
+  }
+
+  .info-item:first-child {
+    margin-right: 16px; /* Espaço entre os dois textos */
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .green-square, .blue-square {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+  
+  .green-square {
+    background-color: #d4edda; /* Verde claro */
+  }
+  
+  .blue-square {
+    background-color: #d1ecf1; /* Azul claro */
+  }

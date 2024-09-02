@@ -1,0 +1,117 @@
+.container {
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: rgb(117, 114, 114);
+    }
+    .estilo-botao {
+        color: white;
+        background-color: rgb(96, 125, 139);
+        margin-right: 15px;
+        margin-bottom: 1%;
+    }
+}
+
+.btn-time_1 {
+    background-color: #286090; color: white;
+}
+
+.btn-time_2 {
+    background-color: #EC971F; color: white;
+}
+
+.text-subtitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(117, 114, 114);
+}
+
+h2{
+    margin-top: 2rem;
+}
+
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-title-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-group {
+    margin-left: auto;
+}
+
+.efect-texto {
+    color: #f2f2f2;
+    background-color: rgb(236, 109, 109) ;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.card-nf-peca, .card-nf-servico {
+    margin-bottom: 10px;
+    background-color: rgb(225, 245, 254);
+}
+
+mat-card-header{
+    background-color: rgb(175, 213, 235);
+    margin-bottom: 15px;
+    .custom-card-title {
+        margin-top: -10px;
+        margin-bottom: 5px;
+        color:rgb(69, 90, 100);
+    }  
+}
+
+.div-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.div-nf{
+    width: 100%;   
+    display: flex;  
+    gap: 0px;
+}
+.div-nf .field {
+    margin-right: 15px;
+    width: 100%;
+}
+
+.div-card-content
+.div-table {
+    width: 55%;
+}
+
+.text-table-topo {
+    font-weight: 600;
+    .text-content {
+    color: red;
+    }
+}
+
+.table-custom {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-custom thead tr {
+    border: 1px solid rgb(117, 114, 114);
+}
+
+.table-custom th, 
+.table-custom td {
+    border: 1px solid rgb(117, 114, 114);
+    padding: 8px;
+}

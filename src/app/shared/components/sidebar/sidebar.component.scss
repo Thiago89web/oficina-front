@@ -1,0 +1,100 @@
+
+.user{
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img{
+        margin-top: 16px;
+        margin-bottom: 20px;
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    .text-profile{       
+        font-size: 16px;
+        font-style: italic;
+        color: #fff;
+    }
+}
+
+  .menu-head{
+    color: #c9c9cc;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+ }
+
+ .nav-list a {
+    i {
+        color: white;        
+        vertical-align: middle;        
+    }
+    
+    span{
+        margin-left: 6%;
+        color: white;
+    }
+ }
+
+
+.panel-menu a i {
+    vertical-align: middle;
+}
+
+.panel-menu {
+    background-color: transparent;
+    box-shadow: none;
+    border: none; 
+    margin-left: -8px;
+    
+    span{
+        margin-left: 7%;
+        color: white;
+    }
+    i {
+        color: white;
+    }
+}
+
+
+/* Status OS Menu specific styles */
+.status-os-menu {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: none;
+    border: none;
+    text-align: left;
+  }
+
+  .status-os-menu span {
+    margin-left: 5%;
+    color: white;
+  }
+  
+  .status-os-menu i {
+    margin-left: 4%;
+    vertical-align: middle; 
+    color: white;
+  }
+
+  .custom-menu {
+    position: relative;
+  }
+  
+  .close-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    min-height: 0;
+    margin-bottom: 8px;
+  }

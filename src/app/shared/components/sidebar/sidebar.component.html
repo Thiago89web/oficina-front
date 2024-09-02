@@ -1,0 +1,137 @@
+<div class="sidebar">
+    <div class="user">
+        <img src="../../../../../assets/images/admin.webp" alt="">
+        <span class="text-profile">Vendedor</span>
+    </div>
+    <mat-divider></mat-divider>
+    
+   <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/home">
+         <i class="material-icons">home</i>
+         <span>Home</span>
+      </a>
+
+    <a mat-list-item routerLink="/nova-os">
+      <i class="material-icons">assignment</i>
+      <span>Nova OS</span>
+  </a>
+        
+    <!-- New Status OS Menu -->
+    <button mat-list-item [matMenuTriggerFor]="rightMenu" 
+    class="status-os-menu">     
+      <i class="material-icons">search</i>
+      <span>Status OS</span>
+    </button>
+    <mat-menu  #rightMenu="matMenu" xPosition="after" class="custom-menu">
+      <button mat-menu-item (click)="closeMenu()" class="close-menu">
+        <mat-icon>close</mat-icon>
+      </button>
+      <button mat-menu-item routerLink="/lista-status-ordem">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Aguardando Orçamento</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Aguardando Cotação</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>OS Com prazo de resposta</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Disponivel para Orçamento</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Aguardando envio do veículo</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Emitidas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Reavaliar</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>provadas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Aguardando Finalização</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Finalizadas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Negadas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Rejeitadas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Canceladas</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Rascunho</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Todos</span>
+      </button>
+    </mat-menu>
+
+      <a mat-list-item routerLink="/lista-cliente-os">
+        <i class="material-icons">drive_eta</i>
+        <span>Cliente OS</span>
+      </a>
+
+      <mat-divider></mat-divider>
+      <mat-accordion>
+         <mat-expansion-panel class="panel-menu">
+           <mat-expansion-panel-header>
+             <mat-panel-title>
+               <i class="material-icons">sell</i>
+               <span>Cadastros</span>
+             </mat-panel-title>
+           </mat-expansion-panel-header>
+           <a mat-list-item routerLink="/menu1" routerLinkActive="active-link">
+             <i class="material-icons">bookmark_border</i>
+             <span>Vendedor</span>
+           </a>
+           <a mat-list-item routerLink="/menu2" routerLinkActive="active-link">
+             <i class="material-icons">bookmark_border</i>
+             <span>Cliente</span>
+           </a>
+           <a mat-list-item routerLink="/menu2" routerLinkActive="active-link">
+            <i class="material-icons">bookmark_border</i>
+            <span>Veículo</span>
+          </a>
+         </mat-expansion-panel>
+       </mat-accordion>
+       <mat-divider></mat-divider>
+
+      <a mat-list-item routerLink="/home">
+        <i class="material-icons">account_tree</i>
+        <span>Integração</span>
+      </a>
+
+      <a mat-list-item routerLink="/home">
+        <i class="material-icons">build</i>
+        <span>Manutenção</span>
+      </a>
+    
+      <a mat-list-item (click)="logout()">
+         <i class="material-icons">logout</i>
+         <span>Logout</span>
+      </a>
+   </mat-nav-list>
+
+</div>

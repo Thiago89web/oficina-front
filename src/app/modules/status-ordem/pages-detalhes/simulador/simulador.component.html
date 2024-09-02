@@ -1,0 +1,97 @@
+<mat-card class="card-nf-servico">
+  <mat-card class="item-card">
+    <mat-card-header class="item-card-header">
+      <mat-card-title>Itens</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="item-card-content">
+      <table mat-table [dataSource]="dataSource" class="item-table" matSort>
+        <!-- Código Column -->
+        <ng-container matColumnDef="codigo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Código</th>
+          <td mat-cell *matCellDef="let element">{{element.codigo}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+  
+        <!-- Descrição Column -->
+        <ng-container matColumnDef="descricao">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Descrição</th>
+          <td mat-cell *matCellDef="let element">{{element.descricao}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+  
+        <!-- Marca Column -->
+        <ng-container matColumnDef="marca">
+          <th mat-header-cell *matHeaderCellDef>Marca</th>
+          <td mat-cell *matCellDef="let element">{{element.marca}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+  
+        <!-- Qtde Column -->
+        <ng-container matColumnDef="qtde">
+          <th mat-header-cell *matHeaderCellDef>Qtde</th>
+          <td mat-cell *matCellDef="let element">{{element.qtde}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+  
+        <!-- Valor Peça Column -->
+        <ng-container matColumnDef="valorPeca">
+          <th mat-header-cell *matHeaderCellDef>Valor Peça</th>
+          <td mat-cell *matCellDef="let element">{{element.valorPeca | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold"> {{totals.valorPeca | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Valor Peça c/ Desc. Column -->
+        <ng-container matColumnDef="valorPecaDesc">
+          <th mat-header-cell *matHeaderCellDef>Valor Peça c/ Desc.</th>
+          <td mat-cell *matCellDef="let element">{{element.valorPecaDesc | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold"> {{totals.valorPecaDesc | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Valor MDO Column -->
+        <ng-container matColumnDef="valorMdo">
+          <th mat-header-cell *matHeaderCellDef>Valor MDO</th>
+          <td mat-cell *matCellDef="let element">{{element.valorMdo | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold"> {{totals.valorMdo | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Valor MDO c/ Desc. Column -->
+        <ng-container matColumnDef="valorMdoDesc">
+          <th mat-header-cell *matHeaderCellDef>Valor MDO c/ Desc.</th>
+          <td mat-cell *matCellDef="let element">{{element.valorMdoDesc | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold"> {{totals.valorMdoDesc | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Valor Total para Emissão de NF Column -->
+        <ng-container matColumnDef="valorTotalNF">
+          <th mat-header-cell *matHeaderCellDef class="valor-total-nf-header">Valor Total para Emissão de NF</th>
+          <td mat-cell *matCellDef="let element" class="valor-total-nf-cell">{{element.valorTotalNF | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold vt-nf-footer"> {{totals.valorTotalNF | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Valor Total Column -->
+        <ng-container matColumnDef="valorTotal">
+          <th mat-header-cell *matHeaderCellDef class="valor-total-header">Valor Total</th>
+          <td mat-cell *matCellDef="let element" class="valor-total-cell">{{element.valorTotal | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td mat-footer-cell *matFooterCellDef class="footer-bold vt-footer"> {{totals.valorTotal | currency:'BRL':'symbol':'1.2-2' }} </td>
+        </ng-container>
+  
+        <!-- Header and Row Declarations -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  
+      </table>
+      <div class="info-container">
+        <div class="info-item">
+          <span class="green-square"></span>
+          <span>Valor para emissão da NFe</span>
+        </div>
+        <div class="info-item">
+          <span class="blue-square"></span>
+          <span>Valor considerado para pagamento ao credenciado*</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
+</mat-card>

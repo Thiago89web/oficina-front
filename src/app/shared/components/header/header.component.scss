@@ -1,0 +1,22 @@
+
+.header {
+  height: 3rem;
+  color: white;
+  background: rgb(96, 125, 139);
+  mat-icon {
+    display: flex; align-items: center;
+    justify-content: center;
+  }
+}
+
+ul li {
+    list-style: none;
+}
+
+.titulo-top {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  

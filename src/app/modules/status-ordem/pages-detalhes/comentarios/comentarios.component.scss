@@ -1,0 +1,54 @@
+
+.container {
+    margin-top: 20px;
+}
+
+.card-header{
+    background-color: #EEEEEE;
+    mat-card-title {
+        margin-top: -10px;
+        padding-bottom: 10px;
+    }
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+
+.textarea-field {
+    width: 100%;
+}
+
+.check-coment mat-icon {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.card-acoes {
+    background-color: #EEEEEE;
+    justify-content: flex-end;
+    height: 15px;
+
+    button {
+        margin-top: 18px;
+    }
+}
+
+.estilo-botao {
+    color: white;
+    background-color: rgb(96, 125, 139);
+    margin-right: 15px;
+    margin-bottom: 1%;
+}
+
+
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-acoes {
+    margin-bottom: -10px;
+    text-align: center;
+}

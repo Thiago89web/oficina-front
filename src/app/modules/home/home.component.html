@@ -1,0 +1,91 @@
+<div class="container">
+    <!-- <h1>Home</h1> -->
+    <br>
+    <div class="content">
+      <br>  
+      <br>
+
+      <div *ngIf="pieChartOptions1" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center" fxLayoutGap="16px" fxFlexFill>
+        <mat-card class="custom-card margin-bottom" fxFlex="1 1 100%" fxFlex.gt-sm="1 1 48%">
+          <mat-card-header>
+            <mat-card-title class="mat-card-title">COMENTÁRIOS NÃO LIDOS</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="custom-card-content">
+            <div id="pie-chart">
+                <apx-chart
+                [series]="pieChartOptions1.series"
+                [chart]="pieChartOptions1.chart"
+                [dataLabels]="pieChartOptions1.dataLabels"
+                [plotOptions]="pieChartOptions1.plotOptions"
+                [fill]="pieChartOptions1.fill"
+                [tooltip]="pieChartOptions1.tooltip"
+                [legend]="pieChartOptions1.legend"
+                [labels]="pieChartOptions1.labels"
+            ></apx-chart>
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+
+        <mat-card class="custom-card margin-bottom" fxFlex="1 1 100%" fxFlex.gt-sm="1 1 48%">
+            <mat-card-header>
+              <mat-card-title class="mat-card-title">RESUMO DAS OS</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="custom-card-content">
+                <div id="pie-chart">
+                    <apx-chart
+                        [series]="pieChartOptions1.series"
+                        [chart]="pieChartOptions1.chart"
+                        [dataLabels]="pieChartOptions1.dataLabels"
+                        [plotOptions]="pieChartOptions1.plotOptions"
+                        [fill]="pieChartOptions1.fill"
+                        [tooltip]="pieChartOptions1.tooltip"
+                        [legend]="pieChartOptions1.legend"
+                        [labels]="pieChartOptions1.labels"
+                    ></apx-chart>
+                </div>
+            </mat-card-content>
+          </mat-card>
+      
+      </div>
+
+
+    <div class="div-dados">
+        <mat-card class="dados-card">
+          <mat-card-header>
+            <mat-card-title>DADOS FINANCEIROS</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="content-div-financ">
+            <form>
+              <div class="form-row">
+                <mat-form-field appearance="fill" class="form-field">
+                  <mat-label>Razão Social</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="form-field">
+                  <mat-label>CNPJ</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>       
+              <div class="form-row">
+                <mat-form-field appearance="fill" class="form-field">
+                  <mat-label>Banco</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="form-field">
+                  <mat-label>Agência</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="form-field-km">
+                  <mat-label>Conta</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+    </div>
+
+      
+  </div>
+</div>

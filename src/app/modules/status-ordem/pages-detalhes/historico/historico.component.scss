@@ -1,0 +1,23 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th, .custom-table td {
+    border: 1px solid #d3d3d3; /* Bordas cinza clara */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .custom-table th {
+    background-color: #f5f5f5; /* Cor de fundo do cabeçalho */
+    font-weight: bold;
+  }
+  
+  /*.custom-table tr:nth-child(even) {
+    background-color: #f9f9f9; //Cor de fundo alternada para linhas pares 
+  }*/
+  
+  .custom-table tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+  }

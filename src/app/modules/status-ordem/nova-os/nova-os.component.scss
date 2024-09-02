@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .btn-salvar, .btn-carregar {
+    background-color: rgb(144, 164, 174);
+    color: white;
+  }
+
+  .btn-carregar {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  mat-card-header {
+    background-color: #f5f5f5;
+  }
+
+  .content {
+    padding-top: 20px;
+  }
+
+  .veiculo-condutor, .inf-veiculo-inf-condutor {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    .veiculo-card {
+      flex: 1;
+    }
+  }
+
+  .form-field {
+    width: calc(50% - 2%);
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .info-os {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .form-field, .textarea-field {
+      flex: 1;
+      min-width: 100%;
+    }
+
+    .textarea-field {
+      flex: 1 1 100%;
+    }
+  }
+
+  .info-os-card button, .btn-footer {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 16px;
+    flex: 1;
+    .form-field-km {
+      width: 20%;
+    }
+  }
+
+  .div-row {
+    display: flex;
+    gap: 16px;
+
+    .form-field {
+      flex: 1;
+      min-width: 25%;
+    }
+  }
+
+  .btn-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;  
+  }
+}

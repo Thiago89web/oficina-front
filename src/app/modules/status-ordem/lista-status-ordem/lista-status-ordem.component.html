@@ -1,0 +1,118 @@
+<div class="container">
+
+    <h1>Aguardando Orçamento</h1>
+
+    <!-- <div class="btn-topo">
+        <button class="estilo-botao" mat-raised-button routerLink="/home"><mat-icon>arrow_back</mat-icon>Voltar</button>  
+    </div> -->
+
+    <div class="btn-topo">
+      <div class="search-container">
+          <div class="left-buttons">
+              <mat-form-field appearance="outline" class="campo-pesquisa">
+                  <mat-label>Digite o Nº da OS ou identificação</mat-label>
+                  <input matInput type="text">
+              </mat-form-field>
+              <button class="estilo-botao" mat-raised-button>
+                  <mat-icon>search</mat-icon>Pesquisar
+              </button>
+              <button class="estilo-botao" mat-raised-button routerLink="/home">
+                  <mat-icon>arrow_back</mat-icon>Voltar
+              </button>
+          </div>
+          <div class="right-buttons">
+            <span>
+                <img src="assets/images/pdf-icon.png" alt="PDF" class="button-icon">
+            </span>
+            <span>
+                <img src="assets/images/excel-icon.png" alt="Excel" class="button-icon">
+            </span>
+        </div>
+      </div>
+  </div>
+
+    <!-- <mat-form-field>
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Digite aqui " #input>
+    </mat-form-field> -->
+ 
+    <div class="mat-elevation-z8">
+ 
+       <table mat-table [dataSource]="dataSource">
+  
+          <ng-container matColumnDef="cod_cliente">
+            <th mat-header-cell *matHeaderCellDef> Cod. Cliente </th>
+            <td mat-cell *matCellDef="let element"> {{element.num_os}} </td>           
+         </ng-container>
+
+          <ng-container matColumnDef="num_os">
+            <th mat-header-cell *matHeaderCellDef> Nº OS </th>
+            <td mat-cell *matCellDef="let element"> {{element.num_os}} </td>           
+         </ng-container>
+
+         <ng-container matColumnDef="status_os">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"> {{element.status_os}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="ident_veiculo">
+            <th mat-header-cell *matHeaderCellDef> Identificação </th>
+            <td mat-cell *matCellDef="let element"> {{element.ident_veiculo}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+         </ng-container>
+
+            <ng-container matColumnDef="data">
+               <th mat-header-cell *matHeaderCellDef> Data </th>
+               <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+            </ng-container>       
+
+         <ng-container matColumnDef="razao_cliente">
+            <th mat-header-cell *matHeaderCellDef> Razão Social </th>
+            <td mat-cell *matCellDef="let element"> {{element.razao_cliente}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="porte">
+            <th mat-header-cell *matHeaderCellDef> Porte </th>
+            <td mat-cell *matCellDef="let element"> {{element.porte}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="unidade_cliente">
+            <th mat-header-cell *matHeaderCellDef> Unidade </th>
+            <td mat-cell *matCellDef="let element"> {{element.unidade_cliente}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="prazo_resposta">
+            <th mat-header-cell *matHeaderCellDef> Prazo de Resposta </th>
+            <td mat-cell *matCellDef="let element"> 
+               <span [ngClass]="{'efect-texto': element.prazo_resposta == 'Indeterminado'}">
+                  {{element.prazo_resposta}}
+               </span>
+            </td>
+         </ng-container>
+
+         <ng-container matColumnDef="tempo_restante">
+            <th mat-header-cell *matHeaderCellDef> Tempo Restante </th>
+            <td mat-cell *matCellDef="let element">            
+               <span [ngClass]="{'efect-texto': element.prazo_resposta == 'Indeterminado'}">
+                  {{element.tempo_restante}}
+               </span>
+            </td>
+         </ng-container>
+         
+         <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef> Ações </th>
+            <td mat-cell *matCellDef="let element">
+               <button mat-raised-button class="btn-detalhes" routerLink="/detalhes-ordem/{{element.id}}">
+                  <i class="material-icons visibility">open_in_new</i>Detalhes
+               </button>
+            </td>
+         </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+       </table>
+ 
+       <mat-paginator [pageSizeOptions]="[5, 2, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+    </div>
+ 
+ </div>

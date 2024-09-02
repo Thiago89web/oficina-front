@@ -1,0 +1,148 @@
+<div class="container">
+  <div class="veiculo-condutor">
+    <mat-card class="veiculo-card">
+      <mat-card-header>
+        <mat-card-title>Veículo</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <form>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Nº Cartão</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Placa</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </form>
+        <button mat-raised-button class="btn-carregar"><i class="material-icons">search</i>Carregar</button>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="veiculo-card">
+      <mat-card-header>
+        <mat-card-title>Condutor</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <form>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Reg. Condutor</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </form>
+        <button mat-raised-button class="btn-carregar"><i class="material-icons">search</i>Carregar</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="inf-veiculo-inf-condutor">
+    <mat-card class="veiculo-card">
+      <mat-card-header>
+        <mat-card-title>Informações do Veículo</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <form>
+          <!-- Primeira linha com dois campos -->
+          <div class="form-row">
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Modelo</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Marca</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>       
+          <!-- Segunda linha com três campos -->
+          <div class="form-row">
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Combustível</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>KM do veículo</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field-km">
+              <mat-label>Km</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </form>
+        <button mat-raised-button class="btn-carregar"><i class="material-icons">search</i>Carregar</button>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="veiculo-card">
+      <mat-card-header>
+        <mat-card-title>Informações do condutor</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <form>
+          <div class="form-row">
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Condutor</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Matrícula</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div class="form-row">
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>CNH</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Categoria CNH</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>         
+        </form>
+        <button mat-raised-button class="btn-carregar"><i class="material-icons">search</i>Carregar</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="info-os">
+    <mat-card class="info-os-card">
+      <mat-card-header>
+        <mat-card-title>Informações da Ordem de Serviço</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <form class="form-container">
+          <div class="div-row">
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Data entrada</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Hora de Entrada</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Tipo de Serviço</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Categoria do Serviço</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          
+          <div class="textarea-field">
+            <mat-form-field appearance="outline" class="textarea-field">
+              <mat-label>Observações</mat-label>
+              <textarea matInput placeholder="Comentário"></textarea>
+            </mat-form-field>
+          </div>
+        </form>
+        
+      </mat-card-content>
+    </mat-card>
+    <div class="btn-footer">
+      <button mat-raised-button class="btn-salvar"><i class="material-icons">save</i>Salvar</button>
+    </div>
+  </div>
+    
+</div>
+  

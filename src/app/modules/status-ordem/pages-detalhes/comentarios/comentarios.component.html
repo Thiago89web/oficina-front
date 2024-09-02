@@ -1,0 +1,28 @@
+<div class="container">
+    <mat-card class="card">
+        <mat-card-header class="card-header">
+          <mat-card-title>Comentários</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="card-content">
+            <div class="row">
+                <mat-form-field appearance="outline" class="textarea-field">
+                  <mat-label>Adicionar comentário</mat-label>
+                  <textarea matInput placeholder="Comentário">{{nome}}</textarea>
+                </mat-form-field>
+              </div>
+              <span><mat-checkbox class="check-coment">Comentário Informativo: <mat-icon>info</mat-icon> </mat-checkbox></span>     
+        </mat-card-content>
+        <mat-card-actions class="card-acoes">
+          <button class="estilo-botao" mat-button><mat-icon>save</mat-icon>Salvar</button>    
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-divider class="divider"></mat-divider>
+
+      <div class="btn-acoes">
+        <button class="estilo-botao" mat-raised-button><mat-icon>cancel</mat-icon>Rejeitar</button>
+        <button class="estilo-botao" mat-raised-button><mat-icon>save</mat-icon>Salvar</button>
+        <button class="estilo-botao" mat-raised-button><mat-icon>done</mat-icon>Emitir</button>
+      </div>
+    
+</div>

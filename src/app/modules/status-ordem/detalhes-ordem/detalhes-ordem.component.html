@@ -1,0 +1,161 @@
+<div class="container">
+
+    <h1>Nº OS: 195</h1>
+   
+    <div class="btn-topo">
+    <button class="estilo-botao" mat-raised-button routerLink="/detalhes-ordem">
+        <mat-icon>arrow_back</mat-icon>Voltar
+    </button>
+</div>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold" class="btn-time_1">Prazo de Resposta: Nenhum</mat-button-toggle>
+        <mat-button-toggle value="bold" class="btn-time_2">Tempo Restante: Nenhum</mat-button-toggle>
+        <mat-button-toggle value="italic" [matMenuTriggerFor]="menu" aria-label="Fazer check-in">
+            <mat-icon>telegram</mat-icon>
+            Check-in
+            <mat-icon>arrow_drop_down</mat-icon>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>play_circle_filled</mat-icon>
+                    <span>Fazer checkin</span>
+                </button>
+
+            </mat-menu>
+        </mat-button-toggle>
+        <mat-button-toggle value="italic">
+            <mat-icon>print</mat-icon>
+            Comprovante</mat-button-toggle>
+        <mat-button-toggle value="underline"><mat-icon>get_app</mat-icon>Checklist</mat-button-toggle>
+
+    </mat-button-toggle-group>
+
+    <mat-divider class="divider"></mat-divider>
+
+    <div class="text-title-content">
+        <span class="efect-texto">Aguardando Orçamento</span>              
+        <div class="button-group">
+            <mat-button-toggle-group [value]="selectedComponent" aria-label="Component Selector">
+                <mat-button-toggle (click)="changeComponent('detalhes')"  value="detalhes"><mat-icon>info</mat-icon>Detalhes</mat-button-toggle>
+                <mat-button-toggle (click)="changeComponent('comentarios')" value="comentarios"><mat-icon>comment</mat-icon>Comentários</mat-button-toggle>
+                <mat-button-toggle (click)="changeComponent('images')" value="images"><mat-icon>upload</mat-icon>Imagens</mat-button-toggle>
+                <mat-button-toggle (click)="changeComponent('itens')" value="itens"><mat-icon>list_alt</mat-icon>Itens</mat-button-toggle>
+                <mat-button-toggle (click)="changeComponent('historico')" value="historico"><mat-icon>description</mat-icon>Histórico</mat-button-toggle>
+                <mat-button-toggle (click)="changeComponent('simulador')" value="simulador"><mat-icon>monetization_on</mat-icon>Simulador</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+
+    <mat-divider class="divider"></mat-divider>
+    
+    <mat-card class="card-nf-peca">
+        <mat-card-header>
+          <mat-card-title class="custom-card-title">Detalhes para emissão da NF (peças)</mat-card-title>       
+        </mat-card-header>
+        <mat-card-content>
+            <div class="div-card-content">
+                <div class="div-nf">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Nome Fantasia</mat-label>
+                        <input matInput placeholder="Nome fantasia" />
+                      </mat-form-field>
+              
+                      <mat-form-field appearance="outline" class="field">
+                        <mat-label>CNPJ</mat-label>
+                        <input matInput placeholder="CNPJ" />
+                      </mat-form-field>
+                </div>
+
+              <div class="div-table">
+                <p class="text-table-topo">
+                    Destinatário Retém Impostos Federais: 
+                    <span class="text-content">SIM - Obrigatório Destaque de retenção em NF (exceto empresas do Simples) conf.aliquotas: </span>
+                </p>
+                <table class="table-custom">
+                    <thead>
+                        <tr>
+                            <th>Fornecimento</th>
+                            <th>NF Peças(DANFE)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IR</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>PIS</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>COFINS</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>CSLL</td>
+                            <td>0,00%</td>
+                        </tr>
+                    </tbody>
+                </table>                
+              </div>
+            </div>      
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card-nf-servico">
+        <mat-card-header>
+          <mat-card-title class="custom-card-title">Detalhes para emissão da NF (serviços)</mat-card-title>         
+        </mat-card-header>
+        <mat-card-content>
+            <div class="div-card-content">
+                <div class="div-nf">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Nome Fantasia</mat-label>
+                        <input matInput placeholder="Nome fantasia" />
+                      </mat-form-field>
+              
+                      <mat-form-field appearance="outline" class="field">
+                        <mat-label>CNPJ</mat-label>
+                        <input matInput placeholder="CNPJ" />
+                      </mat-form-field>
+                </div>
+
+              <div class="div-table">
+                <table class="table-custom">
+                    <thead>
+                        <tr>
+                            <th>Fornecimento</th>
+                            <th>NF Serviços(Mão de Obra)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IR</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>PIS</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>COFINS</td>
+                            <td>0,00%</td>
+                        </tr>
+                        <tr>
+                            <td>CSLL</td>
+                            <td>0,00%</td>
+                        </tr>
+                    </tbody>
+                </table>                
+              </div>
+            </div>      
+        </mat-card-content>
+    </mat-card>
+
+    <app-detalhes *ngIf="selectedComponent === 'detalhes'" [inputData]="objPas"></app-detalhes>    
+    <app-comentarios *ngIf="selectedComponent === 'comentarios'" [inputData]="objPas"></app-comentarios>
+    <app-imagens *ngIf="selectedComponent === 'images'"></app-imagens>
+    <app-itens *ngIf="selectedComponent === 'itens'" [inputData]="objPas"></app-itens>
+    <app-historico *ngIf="selectedComponent === 'historico'"></app-historico>
+    <app-simulador *ngIf="selectedComponent === 'simulador'"></app-simulador>
+      
+</div>

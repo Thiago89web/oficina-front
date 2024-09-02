@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-card class="card-image">
+    <mat-card-header class="card-header">
+      <mat-card-title>Imagens</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="card-content">
+
+      <div class="div-file" *ngIf="fileSrc">
+        <img *ngIf="isImage(fileSrc)" [src]="fileSrc" alt="Uploaded File" class="file-preview">
+        <div *ngIf="!isImage(fileSrc)">
+          <p>Arquivo selecionado: {{ selectedFile?.name }}</p>
+        </div>
+      </div>
+  
+      <div class="btn-selecionar">
+        <input class="span-nome-file" [value]="selectedFile?.name">
+        <button mat-raised-button class="btn-seleciona" (click)="fileInput.click()">Selecionar Arquivo</button> 
+      </div>
+  
+      <div class="btn-acoes">
+        <button mat-raised-button class="btn-upload" (click)="onSaveFile()" [disabled]="!fileSrc"><mat-icon>upload</mat-icon>Salvar</button>
+        <button mat-raised-button class="btn-remove" (click)="onRemoveFile()" [disabled]="!fileSrc"><mat-icon>delete</mat-icon>Remover</button>
+      </div>
+      
+      <input type="file" (change)="onFileSelected($event)" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" hidden #fileInput>
+    </mat-card-content>
+  </mat-card>
+</div>
+
