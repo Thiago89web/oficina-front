@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { StatusOrdem } from 'src/app/models/ordem_os';
+import { StatusOrdem } from 'src/app/models/teste/ordem_os';
 
 @Component({
   selector: 'app-lista-status-ordem',

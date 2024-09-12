@@ -1,0 +1,176 @@
+.container{
+    background-color: #edf5f8;
+    h1 {
+       text-align: center;
+       color: rgb(109, 108, 108);
+    }
+
+    .div-rua-numero, .div-cidade-uf, .div-cep{
+        display: flex;
+    }
+
+    .cep, .bairro, .rua, .numero, .cidade, .uf{
+        margin-right: 2rem;
+    }
+
+    .bairro {
+        width: 40%
+    }
+    .rua {
+        width: 70%;
+    }
+    .cidade {
+        width: 30%;
+    }
+    .uf {
+        width: 7rem;
+    }
+
+    
+    .telefone{
+        width: 30%;
+        margin-right: 2rem;
+    }
+
+    .funcionario{
+        width: 50%;
+    }
+    
+.form-escola {
+    .div-funcao-situacao{
+        display: flex;
+        .funcao-situacao {
+            width: 40%;
+            margin-right: 2%;
+        }
+
+    }
+
+    .nome-escola {
+        width: 80%;
+    }
+
+    mat-divider {
+        width: 60%;
+        margin-bottom: 1%;
+    }
+
+    .label-radio-button, .title-tel{
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(109, 108, 108);
+    }
+
+    .title-tel{
+        margin-right: 10px;
+    }
+    
+    mat-radio-group{
+        display: flex;
+    }
+    mat-radio-button {            
+        padding-right: 1%;
+        margin-bottom: 1%;
+    }
+    text-align: left;
+
+    
+
+    .div-qtd-macro {
+        display: flex;
+        .macro {
+            mat-form-field {
+                width: 15rem;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .div-qtd{
+        width: 30%;
+        display: flex;
+        mat-form-field {
+            margin-right: 10px;
+        }
+    }
+}
+
+.form-escola, .form-contato, .form-endereco {
+    margin-top: 2%;
+    padding: 3%;
+    margin: 0.2%;
+    background-color: white;
+    h1{
+        margin-bottom: 3rem;
+    }
+    .btn-button {
+        margin-top: 2rem;
+    }
+    .btn-button button {
+        margin-right: .5rem;
+        min-width: 6rem;
+    }    
+    .btn-salvar{
+        background-color: rgb(0, 162, 255);
+        color: white;
+    }
+    .btn-avancar, .btn-voltar, .btn-limpar-fone {
+        color: white;
+        background-color:  rgb(70, 190, 130);
+    }
+}
+
+.btn-add-fone {
+    margin-right: 10px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.div-telefone-view {
+    border: 1px solid lightgrey;
+    padding: 5px; 
+}
+
+.icon-close{
+    color: red;
+}
+.icon-edit {
+    margin-left: 5px;
+    color: rgb(0, 153, 255);
+}  
+
+.telefones-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.telefone-item {
+    display: inline-block;
+    margin-right: 20px;
+    //margin-bottom: 10px;
+    display: flex;
+}
+
+.icon-edit, .icon-close {
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.text-erro-fone{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.mensagem-erro {
+    color: #d32f2f;
+    margin-top: -1rem;
+}
+
+.label-nome{
+    color: black;
+}
+
+}

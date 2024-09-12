@@ -31,20 +31,30 @@
     margin-top: 16px;
  }
 
+ .nav-list .status-os-menu i {
+  font-size: 2rem;  
+  margin-left: 0.6rem;
+ }
+
  .nav-list a {
     i {
-        color: white;        
+        color: white; 
+        font-size: 1.5rem;  
         vertical-align: middle;        
     }
     
-    span{
+    /*span{
         margin-left: 6%;
         color: white;
-    }
+    }*/
+ }
+
+ .nav-list a {
+  text-align: center;
  }
 
 
-.panel-menu a i {
+/* .panel-menu a i {
     vertical-align: middle;
 }
 
@@ -61,7 +71,7 @@
     i {
         color: white;
     }
-}
+} */
 
 
 /* Status OS Menu specific styles */

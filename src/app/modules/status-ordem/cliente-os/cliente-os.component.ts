@@ -1,8 +1,8 @@
+
 import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { ClienteOS } from 'src/app/models/cliente_os';
-import { StatusOrdem } from 'src/app/models/ordem_os';
+import { ClienteOS } from 'src/app/models/teste/cliente_os';
 
 @Component({
   selector: 'app-cliente-os',

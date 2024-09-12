@@ -19,6 +19,18 @@ export class UtilService {
     return resultado;
   }
 
+  tipoPessoas = [
+    { valor: 'CLIENTE', label: 'CLIENTE'},
+    { valor: 'OFICINA', label: 'OFICINA'},
+    { valor: 'VENDEDOR', label: 'VENDEDOR'},
+    { valor: 'OUTROS', label: 'OUTROS'}
+  ]
+
+  pessoaFisicaJuridicas = [
+    { valor: 'PESSOA_FISICA', label: 'Pessoa Fisica'},
+    { valor: 'PESSOA_JURIDICA', label: 'Pessoa Juridica'}    
+  ]
+
   tipoStatus = [
     { valor: 1, label: 'AGUARDANDO ORÇAMENTO'},
     { valor: 2, label: 'AGUARDANDO COTAÇÃO'},

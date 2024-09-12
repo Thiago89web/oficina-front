@@ -1,0 +1,42 @@
+
+
+
+table {
+    th {
+      background: rgb(96, 125, 139);
+       font-size: 1rem;
+       font-weight: 400;
+       color: white;
+    }
+    .edit {
+       color: rgb(0, 153, 255);
+       margin-right: 2%;
+    }  
+    .delete {
+       color: red;
+    }
+ }
+  
+  mat-form-field {
+     width: 100%;
+  }
+ 
+  .btn-topo {
+    height: 100%;
+ }
+ 
+ .btn-topo button {
+    color: white;
+    background: rgb(96, 125, 139);
+    margin-right: 15px;
+    margin-bottom: 1%;
+ }
+ 
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(117, 114, 114);
+  }

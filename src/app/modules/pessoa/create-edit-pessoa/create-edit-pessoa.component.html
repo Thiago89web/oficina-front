@@ -1,0 +1,168 @@
+<div class="container">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="Pessoa">
+      <form class="form-escola mat-elevation-z2">
+        <h1>{{title}}</h1>
+          <div class="div-nome">
+              <mat-form-field class="nome-escola">
+                  <mat-label>Nome</mat-label>
+                  <input [(ngModel)]="pessoa.nome" name="nome" matInput>
+              </mat-form-field>
+          </div>
+          <div class="div-qtd-macro">       
+            <div class="div-qtd">
+                <mat-form-field>
+                  <mat-label>email</mat-label>
+                  <input [(ngModel)]="pessoa.email" name="email" matInput>
+                </mat-form-field>
+  
+                <mat-form-field>
+                  <mat-label>Site</mat-label>
+                  <input [(ngModel)]="pessoa.site" name="site" matInput>
+                </mat-form-field>
+            </div>
+            
+          </div>
+
+        <mat-divider></mat-divider>
+        
+        <div class="porte">
+          <label class="label-radio-button">Tipo de Entidade: </label>       
+          <mat-radio-group [(ngModel)]="pessoa.tipoPessoa" name="tipoPessoa">
+            <mat-radio-button *ngFor="let porte of tipoPessoas" [value]="porte.valor">
+              {{ porte.label }}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="porte">
+            <label class="label-radio-button">Tipo de Pessoa: </label>       
+            <mat-radio-group>
+              <mat-radio-button *ngFor="let porte of pessoaFisicaJuridicas" [value]="porte.valor">
+                {{ porte.label }}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+  
+        <mat-divider></mat-divider>
+        <div class="btn-button">
+          <button class="btn-avancar" (click)="mudaTab(1)" mat-raised-button>Avançar<mat-icon>arrow_forward</mat-icon></button>
+          <button (click)="cancel()" mat-raised-button color="warn">Cancelar</button>
+        </div>    
+      </form>
+    </mat-tab>
+    <!--------------------Modulo de contato---------------------->
+   
+    <mat-tab label="Contato">
+      <form class="form-contato mat-elevation-z2">
+        <h1>{{titleContato}}</h1>
+      
+      <div class="div-telefone">
+        <mat-form-field class="telefone">
+            <mat-label>Telefone</mat-label>
+            <input [(ngModel)]="contato.celular" name="celular" matInput mask="(00) 00000-0000" placeholder="Digite o telefone.">
+          </mat-form-field>
+        <mat-form-field class="telefone">
+            <mat-label>Telefone</mat-label>
+            <input [(ngModel)]="contato.telefone" name="telefone" matInput mask="(00) 00000-0000" placeholder="Digite o telefone.">
+        </mat-form-field>          
+          <button class="btn-add-fone" mat-raised-button><mat-icon>add</mat-icon>Adicionar</button>
+          <button class="btn-limpar-fone" mat-raised-button><mat-icon>clear</mat-icon>Limpar</button>             
+      </div>
+      <!-- <mat-error class="text-erro-fone" *ngIf="existeRepeticao()">O número do telefone já está na lista!</mat-error> -->
+  
+      <!-- <span class="title-tel">Telefones: </span>
+      <div class="div-telefone-view">
+        <ul class="telefones-list">
+          <li *ngFor="let value of escola.telefones" class="telefone-item">
+            <span>{{ value }}</span>
+            <mat-icon class="icon-edit" (click)="editarTelefone(value)">edit</mat-icon>
+            <mat-icon class="icon-close" (click)="remover(value)">close</mat-icon>
+          </li>
+        </ul>
+      </div> -->
+      <mat-divider></mat-divider>
+        <div class="btn-button">
+          <button class="btn-avancar" (click)="mudaTab(2)" mat-raised-button>Avançar<mat-icon>arrow_forward</mat-icon></button>
+          <button class="btn-voltar" (click)="mudaTab(0)" mat-raised-button><mat-icon>arrow_back</mat-icon>Voltar</button>
+          <button (click)="cancel()" mat-raised-button color="warn">Cancelar</button>
+        </div>
+      </form>
+    </mat-tab>
+    <!--------------------Modulo de endereço---------------------->
+    <mat-tab label="Endereço">
+      <form #f="ngForm" class="form-endereco mat-elevation-z2">
+        
+        <div class="div-form">
+          <h1>{{titleEndereco}}</h1>
+  
+          <div class="div-cep">
+            <div class="cep">
+              <mat-form-field class="cep">
+                <mat-label>CEP:</mat-label>
+                <input [(ngModel)]="endereco.cep" name="cep" mask="00000-000"
+                matInput placeholder="Ex.. Digite o cep" required>
+              </mat-form-field>
+              <!-- <button class="btn-salvar" mat-raised-button (click)="consultaCEP(endereco.cep, f)"><mat-icon>search</mat-icon>Consultar CEP</button>  -->
+            </div>                
+          </div>
+  
+        <div class="div-bairro">
+          <mat-form-field class="bairro">
+            <mat-label>Bairro:</mat-label>
+            <input [(ngModel)]="endereco.bairro" name="bairro" required
+            matInput placeholder="Ex.. Nome do bairro">
+          </mat-form-field>
+        </div>
+  
+        <div class="div-rua-numero">
+          <mat-form-field class="logradouro">
+            <mat-label>Logradouro:</mat-label>
+            <input [(ngModel)]="endereco.logradouro" name="logradouro"
+            matInput placeholder="Ex.. Nome da logradouro">
+          </mat-form-field>
+  
+          <mat-form-field class="numero">
+            <mat-label>Número:</mat-label>
+            <input [(ngModel)]="endereco.numero" name="numero"
+            matInput placeholder="Ex.. Digite o número">
+          </mat-form-field>
+
+          <mat-form-field class="complemento">
+            <mat-label>Complemento:</mat-label>
+            <input [(ngModel)]="endereco.complemento" name="complemento"
+            matInput placeholder="Ex.. Digite o complemento">
+          </mat-form-field>
+        </div>
+  
+        <div class="div-cidade-uf">
+          <mat-form-field class="cidade">
+            <mat-label>Cidade:</mat-label>
+            <input [(ngModel)]="endereco.cidade" name="cidade" required
+            matInput placeholder="Ex.. Nome da cidade">
+          </mat-form-field>
+  
+          <div class="div-uf">
+            <mat-form-field class="uf">
+              <mat-label>UF</mat-label>         
+              <mat-select [(ngModel)]="endereco.uf" name="uf">
+                <mat-option *ngFor="let uf of ufs" [value]="uf.valor">
+                  {{ uf.label }}
+                </mat-option>          
+              </mat-select>
+            </mat-form-field>
+          </div>        
+        </div>      
+        </div>
+        <mat-divider></mat-divider>
+        <div class="btn-button">
+          <button class="btn-salvar" mat-raised-button><mat-icon>save</mat-icon>Salvar</button>
+          <button class="btn-voltar" (click)="mudaTab(2)" mat-raised-button><mat-icon>arrow_back</mat-icon>Voltar</button>
+          <button class="btn-cancelar" (click)="cancel()" mat-raised-button color="warn">Cancelar</button>
+        </div>
+      </form>
+     
+    </mat-tab>
+    </mat-tab-group>
+    </div>
+  

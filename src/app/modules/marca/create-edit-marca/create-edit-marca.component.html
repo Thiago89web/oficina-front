@@ -1,0 +1,16 @@
+<form class="mat-elevation-z2"><!--form [formGroup]="formGroup"-->
+    <h1>{{title}}</h1>        
+      <p>
+        <mat-form-field class="nome-marca">
+          <mat-label>Nome da marca:</mat-label>
+          <input matInput [(ngModel)]="marca.nome" name="nome" placeholder="Ex.. Nome da marca" (input)="transformarParaMaiusculas()">
+          <mat-icon matSuffix>label</mat-icon>
+          
+        </mat-form-field>
+      </p>
+                  
+          <div class="btn-button">
+          <button class="btn-salvar" (click)="salvar()" mat-raised-button>Salvar</button>
+          <button (click)="cancel()" mat-raised-button color="warn">Cancelar</button>
+          </div>    
+  </form>

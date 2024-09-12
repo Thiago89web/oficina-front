@@ -1,9 +1,9 @@
 <mat-drawer-container>
-    <mat-drawer #sidebar mode="side" opened>
+    <mat-drawer>
         <app-sidebar></app-sidebar>
     </mat-drawer>
     <mat-drawer-content>
-        <button class="menu" (click)="sidebar.toggle()"><mat-icon>menu</mat-icon></button>
+        <!-- <button class="menu" (click)="sidebar.toggle()"><mat-icon>menu</mat-icon></button> -->
         <app-header></app-header>
             <div class="drawer-content">              
                 <router-outlet></router-outlet>

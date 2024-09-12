@@ -1,26 +1,26 @@
 <div class="sidebar">
-    <div class="user">
+    <!-- <div class="user">
         <img src="../../../../../assets/images/admin.webp" alt="">
         <span class="text-profile">Vendedor</span>
     </div>
-    <mat-divider></mat-divider>
+    <mat-divider></mat-divider> -->
     
    <mat-nav-list class="nav-list">
       <a mat-list-item routerLink="/home">
          <i class="material-icons">home</i>
-         <span>Home</span>
+         <!-- <span>Home</span> -->
       </a>
 
     <a mat-list-item routerLink="/nova-os">
       <i class="material-icons">assignment</i>
-      <span>Nova OS</span>
+      <!-- <span>Nova OS</span> -->
   </a>
         
     <!-- New Status OS Menu -->
     <button mat-list-item [matMenuTriggerFor]="rightMenu" 
     class="status-os-menu">     
       <i class="material-icons">search</i>
-      <span>Status OS</span>
+      <!-- <span>Status OS</span> -->
     </button>
     <mat-menu  #rightMenu="matMenu" xPosition="after" class="custom-menu">
       <button mat-menu-item (click)="closeMenu()" class="close-menu">
@@ -90,10 +90,10 @@
 
       <a mat-list-item routerLink="/lista-cliente-os">
         <i class="material-icons">drive_eta</i>
-        <span>Cliente OS</span>
+        <!-- <span>Cliente OS</span> -->
       </a>
 
-      <mat-divider></mat-divider>
+      <!-- <mat-divider></mat-divider>
       <mat-accordion>
          <mat-expansion-panel class="panel-menu">
            <mat-expansion-panel-header>
@@ -116,21 +116,97 @@
           </a>
          </mat-expansion-panel>
        </mat-accordion>
-       <mat-divider></mat-divider>
+       <mat-divider></mat-divider> -->
+
+       <!-- New Status OS Menu -->
+    <button mat-list-item [matMenuTriggerFor]="rightMenu_2" 
+    class="status-os-menu">     
+      <i class="material-icons">bookmark_border</i>
+      <!-- <span>Cadastros</span> -->
+    </button>
+    <mat-menu  #rightMenu_2="matMenu" xPosition="after" class="custom-menu">
+      <button mat-menu-item (click)="closeMenu()" class="close-menu">
+        <mat-icon>close</mat-icon>
+      </button>
+      <button mat-menu-item routerLink="/lista-pessoa">
+        <mat-icon>person</mat-icon>
+        <span>Pessoas</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-status-ordem">
+        <mat-icon>person</mat-icon>
+        <span>Cliente OS</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Condutor</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-marca">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Marca</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-modelo">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>modelo</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-veiculo">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Veículo</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-produto">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Produto</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-produto-tipo">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Tipo Produto</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-produto-categoria">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Categoria Produto</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-garantia">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Garantia</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-servico">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Serviço</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-servico-categoria">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Serviço Categoria</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Orçamento</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-veiculo">
+        <mat-icon>drive_eta</mat-icon>
+        <span>Veículo</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-cliente">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Cliente</span>
+      </button>
+      <button mat-menu-item routerLink="/lista-vendedor">
+        <mat-icon>bookmark_border</mat-icon>
+        <span>Vendedor</span>
+      </button>
+    </mat-menu>
 
       <a mat-list-item routerLink="/home">
         <i class="material-icons">account_tree</i>
-        <span>Integração</span>
+        <!-- <span>Integração</span> -->
       </a>
 
       <a mat-list-item routerLink="/home">
         <i class="material-icons">build</i>
-        <span>Manutenção</span>
+        <!-- <span>Manutenção</span> -->
       </a>
     
       <a mat-list-item (click)="logout()">
          <i class="material-icons">logout</i>
-         <span>Logout</span>
+         <!-- <span>Logout</span> -->
       </a>
    </mat-nav-list>
 

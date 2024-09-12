@@ -55,6 +55,38 @@ import { ComentariosComponent } from "../modules/status-ordem/pages-detalhes/com
 import { PercentFormatterPipe } from "../pipe/PercentFormatter.pipe";
 import { NovaOsComponent } from "../modules/status-ordem/nova-os/nova-os.component";
 import { ClienteOsComponent } from "../modules/status-ordem/cliente-os/cliente-os.component";
+import { CreateEditClienteComponent } from "../modules/cliente/create-edit-cliente/create-edit-cliente.component";
+import { ListaClienteComponent } from "../modules/cliente/lista-cliente/lista-cliente.component";
+import { CreateEditCondutorComponent } from "../modules/condutor/create-edit-condutor/create-edit-condutor.component";
+import { ListaCondutorComponent } from "../modules/condutor/lista-condutor/lista-condutor.component";
+import { CreateEditGarantiaComponent } from "../modules/garantia/create-edit-garantia/create-edit-garantia.component";
+import { ListaGarantiaComponent } from "../modules/garantia/lista-garantia/lista-garantia.component";
+import { CreateEditMarcaComponent } from "../modules/marca/create-edit-marca/create-edit-marca.component";
+import { ListaMarcaComponent } from "../modules/marca/lista-marca/lista-marca.component";
+import { CreateEditModeloComponent } from "../modules/modelo/create-edit-modelo/create-edit-modelo.component";
+import { ListaModeloComponent } from "../modules/modelo/lista-modelo/lista-modelo.component";
+import { CreateEditOficinaComponent } from "../modules/oficina/create-edit-oficina/create-edit-oficina.component";
+import { ListaOficinaComponent } from "../modules/oficina/lista-oficina/lista-oficina.component";
+import { CreateEditOrcamentoComponent } from "../modules/orcamento/create-edit-orcamento/create-edit-orcamento.component";
+import { ListaOrcamentoComponent } from "../modules/orcamento/lista-orcamento/lista-orcamento.component";
+import { CreateEditOrdemServicoComponent } from "../modules/ordem-serviso/create-edit-ordem-servico/create-edit-ordem-servico.component";
+import { ListaOrdemServicoComponent } from "../modules/ordem-serviso/lista-ordem-servico/lista-ordem-servico.component";
+import { CreateEditPessoaComponent } from "../modules/pessoa/create-edit-pessoa/create-edit-pessoa.component";
+import { ListaPessoaComponent } from "../modules/pessoa/lista-pessoa/lista-pessoa.component";
+import { CreateEditProdutoComponent } from "../modules/produto/create-edit-produto/create-edit-produto.component";
+import { ListaProdutoComponent } from "../modules/produto/lista-produto/lista-produto.component";
+import { CreateEditServicoComponent } from "../modules/servico/create-edit-servico/create-edit-servico.component";
+import { ListaServicoComponent } from "../modules/servico/lista-servico/lista-servico.component";
+import { CreateEditVeiculoComponent } from "../modules/veiculo/create-edit-veiculo/create-edit-veiculo.component";
+import { ListaVeiculoComponent } from "../modules/veiculo/lista-veiculo/lista-veiculo.component";
+import { CreateEditVendedorComponent } from "../modules/vendedor/create-edit-vendedor/create-edit-vendedor.component";
+import { ListaVendedorComponent } from "../modules/vendedor/lista-vendedor/lista-vendedor.component";
+import { ListaProdutoCategoriaComponent } from "../modules/produto-categoria/lista-categoria-produto/lista-produto-categoria.component";
+import { CreateEditProdutoCategoriaComponent } from "../modules/produto-categoria/create-edit-categoria-produto/create-edit-produto-categoria.component";
+import { ListaServicoCategoriaComponent } from "../modules/servico-categoria/lista-servico-categoria/lista-servico-categoria.component";
+import { CreateEditServicoCategoriaComponent } from "../modules/servico-categoria/create-edit-servico-categoria/create-edit-servico-categoria.component";
+import { CreateEditProdutoTipoComponent } from "../modules/produto-tipo/create-edit-produto-tipo/create-edit-produto-tipo.component";
+import { ListaProdutoTipoComponent } from "../modules/produto-tipo/lista-produto-tipo/lista-produto-tipo.component";
 
 
 @NgModule({
@@ -74,7 +106,39 @@ import { ClienteOsComponent } from "../modules/status-ordem/cliente-os/cliente-o
       SimuladorComponent,
       ComentariosComponent,
       NovaOsComponent,
-      ClienteOsComponent
+      ClienteOsComponent,
+      ListaMarcaComponent,
+    CreateEditMarcaComponent,
+    ListaOficinaComponent,
+    CreateEditOficinaComponent,
+    ListaModeloComponent,
+    CreateEditModeloComponent,
+    ListaGarantiaComponent,
+    CreateEditGarantiaComponent,
+    ListaClienteComponent,
+    CreateEditClienteComponent,
+    ListaCondutorComponent,
+    CreateEditCondutorComponent,
+    ListaOrcamentoComponent,
+    CreateEditOrcamentoComponent,
+    ListaOrdemServicoComponent,
+    CreateEditOrdemServicoComponent,
+    ListaVendedorComponent,
+    CreateEditVendedorComponent,
+    ListaVeiculoComponent,
+    CreateEditVeiculoComponent,
+    ListaPessoaComponent,
+    CreateEditPessoaComponent,
+    ListaServicoComponent,
+    CreateEditServicoComponent,
+    ListaProdutoComponent,
+    CreateEditProdutoComponent,
+    ListaProdutoCategoriaComponent,
+    CreateEditProdutoCategoriaComponent,
+    ListaServicoCategoriaComponent,
+    CreateEditServicoCategoriaComponent,
+    CreateEditProdutoTipoComponent,
+    ListaProdutoTipoComponent
     ],
     imports: [
         CommonModule,
